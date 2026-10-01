@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❄️</text></svg>"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/app.css"><title>Log in · Winter Arc</title></head><body>
+<div class="auth-wrap"><div class="card auth-card stack">
+ <a class="brand" href="index.html" style="font-size:1.4rem">❄️ Winter Arc</a>
+ <div class="tabs" style="margin:0"><button id="tl" class="on">Log in</button><button id="ts">Sign up</button></div>
+ <p class="err" id="msg" role="alert"></p>
+ <form id="f" class="stack" novalidate>
+  <div id="sf" style="display:none" class="stack"><label>Full name<input id="name" autocomplete="name" maxlength="40"></label><label>Username<input id="user" maxlength="20" autocomplete="username"></label></div>
+  <label>Email<input id="email" type="email" autocomplete="email"></label>
+  <label>Password<input id="pw" type="password" autocomplete="current-password"></label>
+  <label id="cf" style="display:none">Confirm password<input id="pw2" type="password" autocomplete="new-password"></label>
+  <button class="btn block" id="go">Log in</button>
+ </form>
+ <div class="divider">or</div>
+ <button class="btn ghost block" id="gg">Continue with Google</button>
+ <a href="#" id="fp" style="text-align:center;display:block;font-size:.88rem">Forgot password?</a>
+</div></div>
+<script type="module" src="js/auth.js"></script></body></html>
